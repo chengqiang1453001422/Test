@@ -1,0 +1,392 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--为了让 IE 浏览器运行最新的渲染模式，建议将此 meta 标签加入到你页面的 head 中-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 为了让浏览器运行高速模式下，建议将此 meta 标签加入到你页面的 head 中-->
+    <meta name="renderer" content="webkit">
+    <!--为了确保适当的绘制和触屏缩放，需要在 之中添加viewport元数据标签-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/pintuer.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/dianping.css"/>
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pintuer.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slides.js"></script>
+    <title>市北区体育局业务管理系统</title>
+    <style>
+        .siteImg {
+            margin: 10px 0 20px;
+        }
+
+        .siteImg img {
+            height: 120px;
+            width: 100px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="line-big">
+        <div class="xs8">
+            <div class="logo-col">
+                <img src="images/logo_new.png" alt=""/>
+                <span>市北区体育局业务管理系统</span>
+            </div>
+        </div>
+        <div class="xs4">
+            <form class="search-col">
+                <div class="input-group">
+                    <input type="text" class="input border-blue" name="keywords" size="30" placeholder="关键词"/>
+                    <span class="addbtn">
+                        <button type="button" class="button bg-blue">
+                            搜索
+                        </button></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="navbar bg-myself bg-inverse">
+        <div class="navbar-body nav-navicon">
+            <ul class="nav nav-inline nav-menu nav-big">
+                <li><a href="javascript:void(0)" onclick="window.location.href='index.html'">首页</a></li>
+                <li><a href="">预约信息</a></li>
+                <li><a href="">场馆资讯</a></li>
+                <li><a href="">系统资讯</a></li>
+                <li><a href="">健身知识</a></li>
+                <li><a href="">政策法规</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="line-big margin-big-top">
+        <div class="xs12">
+            <ul class="bread">
+                <li>当前位置：</li>
+                <li><a href="#">场馆资讯</a></li>
+                <li>市北健身中心</li>
+            </ul>
+        </div>
+    </div>
+    <div class="line-big margin-top min-height">
+        <div class="xs9">
+            <div class="basic-info">
+                <div class="shop-name">市北健身中心</div>
+                <div class="brief-info">
+                    <span title="四星商户" class="mid-rank-stars mid-str40"></span>
+                    <span id="reviewCount" class="item">228条评论</span>
+                    <span id="avgPriceTitle" class="item">人均：25元</span>
+                        <span id="comment_score">
+                            <span class="item">设施：7.9</span>
+                            <span class="item">场地：7.9</span>
+                            <span class="item">划算：7.8</span>
+                        </span>
+                </div>
+                <div class="cont">电话：<span>18669721080</span></div>
+                <div class="cont">营业时间：<span>周一至周日09:00-18:00</span></div>
+                <div class="cont">地址：<span>明霞路37号中联运动公园(台东三百惠,动物园北门,市北区教育局)</span></div>
+                <div class="siteImg">
+                    <img src="images/timg.jpg" alt=""/>
+                    <img src="images/timg1.jpg" alt=""/>
+                </div>
+                <div class="action">
+                    <a class="write left-action" href="" target="_blank" rel="nofollow" data-click-name="写点评">
+                        <i class="icon"></i>
+                        <span id="dpReviewBtn">写点评</span>
+                    </a>
+                        <span class="right-action">
+                            <a class="share J-weixin" rel="nofollow" title="微信分享" data-click-name="微信分享">
+                                <i class="icon"></i>
+                            </a>
+                            <a id="fav" class="favorite J-favorite" rel="nofollow" title="收藏" data-click-name="收藏">
+                                <i class="icon"></i>
+                            </a>
+                            <a class="report" title="报错" href="" rel="nofollow" target="_blank" data-click-name="报错">
+                                <i class="icon"></i>
+                            </a>
+                            <a class="action-more J-action-more">
+                                <i class="icon"></i>
+                            </a>
+                        </span>
+                </div>
+            </div>
+            <div id="shoptabs-wrapper">
+                <div id="shop-tabs" class="mod">
+                    <h2 class="mod-title single">
+                        <a class="item J_item" data-click-name="环境" data-click-title="商户信息tab">环境</a>
+                    </h2>
+                    <div class="shop-tab-photos clearfix J-panel">
+                        <div class="container clearfix">
+                            <a class="item"><img src="images/site/PT_EF17322121EE716.jpg"></a>
+                            <a class="item"><img src="images/site/PT_EF24322291EF595.jpg"></a>
+                            <a class="item"><img src="images/site/PT_ET28621310EF562.jpg"></a>
+                            <a class="item"><img src="images/site/PT_ET28421370EF714.jpg"></a>
+                            <a class="item"><img src="images/site/PT_EF37424121EE460.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="comment" class="mod comment">
+                <h2 class="mod-title J-tab" id="defaultcomment-wrapper" style="border-bottom: none;">
+                    <a class="item all-review" data-type="all" href="">网友点评<span class="sub-title">(228)</span></a>
+                </h2>
+
+                <div id="summaryfilter-wrapper">
+                    <div class="comment-condition J-comment-condition Fix">
+                        <div class="hd"><span>大家认为</span> <i class="arrow-left"></i></div>
+                        <div class="content1">
+                                <span class="good J-summary">
+                                    <a date-type="环境优雅" data-click-name="筛选标签0" data-click-title="评论筛选标签">环境优雅(42)</a>
+                                </span>
+                                <span class="good J-summary">
+                                    <a date-type="服务热情" data-click-name="筛选标签1" data-click-title="评论筛选标签">服务热情(28)</a>
+                                </span>
+                                <span class="good J-summary">
+                                    <a date-type="性价比高" data-click-name="筛选标签2" data-click-title="评论筛选标签">性价比高(20)</a>
+                                </span>
+                                <span class="good J-summary">
+                                    <a date-type="价格实惠" data-click-name="筛选标签3" data-click-title="评论筛选标签">价格实惠(9)</a>
+                                </span>
+                                <span class="good J-summary">
+                                    <a date-type="干净卫生" data-click-name="筛选标签4" data-click-title="评论筛选标签">干净卫生(8)</a>
+                                </span>
+                                <span class="good J-summary">
+                                    <a date-type="停车方便" data-click-name="筛选标签5" data-click-title="评论筛选标签">停车方便(4)</a>
+                                </span>
+                                <span class="good J-summary">
+                                    <a date-type="体验很棒" data-click-name="筛选标签6" data-click-title="评论筛选标签">体验很棒(4)</a>
+                                </span>
+                                <span class="bad J-summary">
+                                    <a date-type="人气一般" data-click-name="筛选标签7" data-click-title="评论筛选标签">人气一般(11)</a>
+                                </span>
+                                <span class="bad J-summary">
+                                    <a date-type="场地一般" data-click-name="筛选标签8" data-click-title="评论筛选标签">场地一般(9)</a>
+                                </span>
+                                <span class="bad J-summary">
+                                    <a date-type="设施陈旧" data-click-name="筛选标签9" data-click-title="评论筛选标签">设施陈旧(7)</a>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="comment-filter-box clearfix J-filter">
+                        <label class="filter-item J-filter-all">
+                            <a class="checkbox checked" data-value="all" data-click-name="全部"
+                               data-click-title="评论筛选种类"></a>全部</label> <!---->
+                        <label class="filter-item J-filter-pic">
+                            <a class="checkbox" data-value="pic" data-click-name="图片"
+                               data-click-title="评论筛选种类"></a>图片<span class="count">(13)</span></label>
+                        <label class="filter-item J-filter-good">
+                            <a class="checkbox" data-value="good" data-click-name="好评"
+                               data-click-title="评论筛选种类"></a>好评<span class="count">(184)</span></label>
+                        <label class="filter-item J-filter-common">
+                            <a class="checkbox" data-value="common" data-click-name="中评" data-click-title="评论筛选种类"></a>中评<span
+                                class="count">(34)</span></label>
+                        <label class="filter-item J-filter-bad">
+                            <a class="checkbox" data-value="bad" data-click-name="差评"
+                               data-click-title="评论筛选种类"></a>差评<span class="count">(10)</span></label>
+
+                        <div class="comment-filter-sort-box">
+                            <select name="sort" id="">
+                                <option value="默认排序">默认排序</option>
+                                <option value="最新点评">最新点评</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <ul class="comment-list J-list">
+                    <li class="comment-item" id="rev_409710981" data-id="409710981" xmlns="http://www.w3.org/1999/html">
+                        <a class="avatar J-avatar" target="_blank" rel="nofollow" href="">
+                            <img alt="Hey,world" src="images/user.jpg">
+                        </a>
+
+                        <p class="user-info">
+                            <a class="name" target="_blank">Hey,world</a>
+                            <span class="user-rank-rst urr-rank45" title="贡献值1000-1999"></span><i
+                                class="icon-vdper"></i>
+                        </p>
+
+                        <div class="content1">
+                            <p class="shop-info">
+                                <span class="sml-rank-stars sml-str40"></span>
+                                <span class="average">人均：0元</span>
+                            </p>
+
+                            <p class="desc">挺好找，就在东方丽人培训学校。跟着导航就到了。<br>场地挺一般的，白天是30一小时，晚上60一小时。会员充值可以便宜点。
+                                <br>因为离得不远，和小伙伴一起办了个半年卡。还算比较实惠。<br>建议打完再结算比较好，要不一进门就收钱不知道打多久。
+                            </p>
+                            <dl class="recommend-info clearfix"></dl>
+                            <div class="photos">
+                                <div>
+                                    <a class="item J-photo" target="_blank">
+                                        <img src="images/site/PT_ET28421370EF714.jpg">
+                                    </a>
+                                    <a class="item J-photo">
+                                        <img src="images/site/PT_ET28621310EF562.jpg">
+                                    </a>
+                                    <a class="item J-photo">
+                                        <img src="images/site/PT_EF24322291EF595.jpg">
+                                    </a>
+                                    <a class="item J-photo">
+                                        <img src="images/site/PT_EF17322121EE716.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="misc-info" id="review_409710981_action">
+                                <div class="actions">
+                                    <a class="item J-praise "> <i class="icon i-praise"></i> 赞 (3) </a>
+                                    <a class="item" target="_blank">回应 </a>
+                                    <a class="item J-favorite">收藏</a>
+                                    <a class="item J-report">举报</a>
+                                </div>
+                                <span class="time">2018-04-05 12:56</span>
+                                <span class="shop">市北健身中心</span>
+                                <span class="item">签到点评</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="xs3">
+            <div class="aside">
+                <div class="J_mkt-group-2"></div>
+                <div class="J_midas-4">
+                    <div class="midas-wrap midas-wrap-shop">
+                        <div class="title clearfix"><h4>课程信息</h4></div>
+                        <div class="J_con">
+                            <div class="item">
+                                <div class="mn-lr">
+                                    <a class="img-shop" href="" alt="鹏派国际游泳健身">
+                                        <img src="images/site/PT_EF17322121EE716.jpg" alt=""/>
+                                    </a>
+
+                                    <p class="tit">
+                                        <a href="" target="_blank">鹏派国际游泳健身</a>
+                                    </p>
+
+                                    <p class="star"><span class="sml-rank-stars sml-str40"></span></p>
+
+                                    <p class="info"><span class="fr">人均 -</span><span class="region">台东</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="J_midas-4 margin-top">
+                    <div class="midas-wrap midas-wrap-shop">
+                        <div class="title clearfix"><h4>教练信息</h4></div>
+                        <div class="J_con">
+                            <div class="item">
+                                <div class="mn-lr" style="height:100px;">
+                                    <a class="img-shop1 img-shop" href="" alt="">
+                                        <img src="images/coach.png" alt=""/>
+                                    </a>
+
+                                    <p class="tit">
+                                        <a href="" target="_blank">国家一级健身教练</a>
+                                    </p>
+
+                                    <p class="info"><span>市北健身中心</span></p>
+
+                                    <p class="info"><span class="region">田亮</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="J_midas-3 margin-top">
+                    <div class="midas-wrap midas-wrap-search">
+                        <div class="title clearfix">
+                            <h4>场馆设施</h4>
+                        </div>
+                        <div class="J_con">
+                            <div class="item ">
+                                <ul class="mn">
+                                    <li class="shop">
+                                        <a href="" target="_blank" class="img-shop">
+                                            <img src="images/site/PT_ET06700850ET976.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="tit">
+                                        <a href="" target="_blank">市北健身中心</a>
+                                    </li>
+                                    <li class="star">
+                                        <span class="sml-rank-stars sml-str50"></span>
+                                    </li>
+                                    <li class="text  Fix">
+                                        <span class="ave fr">人均 ¥47</span>
+                                        <span class="region">明霞路37号</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item ">
+                                <ul class="mn">
+                                    <li class="shop">
+                                        <a href="" target="_blank" class="img-shop">
+                                            <img src="images/site/PT_ET06700850ET976.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="tit">
+                                        <a href="" target="_blank">市北健身中心</a>
+                                    </li>
+                                    <li class="star">
+                                        <span class="sml-rank-stars sml-str50"></span>
+                                    </li>
+                                    <li class="text  Fix">
+                                        <span class="ave fr">人均 ¥47</span>
+                                        <span class="region">明霞路37号</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-layout margin-big-top">
+    <div class="border-top padding-big-top padding-big-bottom">
+        <div class="container">
+            <div class="line-big">
+                <div class="xs8">
+                    <div class="wp-title_content">
+                        <div style="">
+                            <span>主办单位：青岛市市北区体育局&nbsp; 联系地址：青岛市明霞路37号</span>
+                        </div>
+                        <div style="">
+                            <span>电话：010-6XXXXXXX 邮编:100120&nbsp; 传真:010-6XXXXXXX&nbsp; 邮箱:xxxXXXXX@xxx.com</span>
+                        </div>
+                        <div style="">
+                            <span>技术支持：青岛市逸海蓝图信息科技有限公司</span>
+                        </div>
+                        <div class="link">
+                            <span>链接：</span><a href="">青岛市体育局</a><a href="">市南区体育局</a><a href="">李沧区体育局</a><a href="">崂山区体育局</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xs4">
+                    <div class="app">
+                        <img src="images/erweima.jpg" alt=""/>
+                        <span>移动端网站</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center height-big" style="color:#fff;">
+            版权所有 © <a href="http://www.yhlto.com">http://www.yhlto.com</a> All Rights Reserved
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

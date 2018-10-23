@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--为了让 IE 浏览器运行最新的渲染模式，建议将此 meta 标签加入到你页面的 head 中-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 为了让浏览器运行高速模式下，建议将此 meta 标签加入到你页面的 head 中-->
+    <meta name="renderer" content="webkit">
+    <!--为了确保适当的绘制和触屏缩放，需要在 之中添加viewport元数据标签-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/pintuer.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pintuer.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slides.js"></script>
+    <title>教练信息</title>
+    <style>
+        .setheight{
+            height:133px;
+        }
+        .info{
+            background-color: #75b74b;
+            padding:10px;
+        }
+        .peopleinfo{
+            padding:30px 10px;
+        }
+        .people{
+            color:#fff;
+            font-size:20px;
+            font-weight:bold;
+        }
+        .info p{
+            color:#fff;
+            margin-bottom:10px;
+        }
+        .imgbox{
+            width:90px;
+            height:113px;
+            border-radius:5px;
+        }
+        .imgbox img{
+            width:100%;
+            height:inherit;
+            border-radius:5px;
+        }
+        .baseinfo{
+            background-color: #fff;
+            padding:20px;
+        }
+        h1{
+            color:#75b74b;
+            font-size:18px;
+            font-weight:bold;
+        }
+        .baseinfo-box{
+            margin:10px 0;
+        }
+        .baseinfo-box li{
+            list-style:none;
+            height:20px;
+            line-height:20px;
+        }
+        .name{
+            color:#999;
+            font-size:12px;
+        }
+        .table tbody tr:nth-child(even) td  {
+            background-color: #fff;
+        }
+        .top{
+            height:50px;
+            width:100%;
+            line-height:50px;
+            padding-left:10px;
+            font-size:18px;
+            font-weight: bold;
+            color: #75b74b;
+            background:linear-gradient(to bottom, #fcfcfc 0%,#ebebeb 100%);
+        }
+        .table-responsive-y{
+            border:1px solid #ddd;
+        }
+        th,.top {
+            background:linear-gradient(to bottom, #fcfcfc 0%,#ebebeb 100%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="line-big">
+        <div class="xs8">
+            <div class="logo-col">
+                <img src="images/logo_new.png" alt=""/>
+                <span>市北区体育局业务管理系统</span>
+            </div>
+        </div>
+        <div class="xs4">
+            <form class="search-col">
+                <div class="input-group">
+                    <input type="text" class="input border-blue" name="keywords" size="30" placeholder="关键词" />
+                    <span class="addbtn">
+                        <button type="button" class="button bg-blue">
+                            搜索</button></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="navbar bg-myself bg-inverse">
+        <div class="navbar-body nav-navicon">
+            <ul class="nav nav-inline nav-menu nav-big">
+                <li><a href="javascript:void(0)" onclick="window.location.href='index.html'">首页</a></li>
+                <li><a href="">预约信息</a></li>
+                <li><a href="">场馆资讯</a></li>
+                <li><a href="">系统资讯</a></li>
+                <li><a href="">健身知识</a></li>
+                <li><a href="">政策法规</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="line-big margin-big-top">
+        <div class="xs12">
+            <ul class="bread">
+                <li>当前位置：</li>
+                <li><a href="#">场馆资讯</a></li>
+                <li>教练信息</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="line-big margin-big-top min-height">
+        <div class="xs3">
+            <div class="xs12 padding" style="background-color: #e6e6e6;">
+                <div class="info setheight">
+                    <div class="imgbox float-left">
+                        <img id="headImg" src="images/coach.png">
+                    </div>
+                    <div class="peopleinfo float-left">
+                        <p class="people">admin</p>
+                        <p>
+                        	<span>男</span>&nbsp;|&nbsp;
+                        	<span>1986-5-28</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="baseinfo margin-top">
+                    <h1>基本信息</h1>
+                    <ul class="baseinfo-box">
+                        <li class="name">身份证：</li>
+                        <li>111111111111111122</li>
+                    </ul>
+                    <ul class="baseinfo-box">
+                        <li class="name">第一学历：</li>
+                        <li>高中</li>
+                    </ul>
+                    <ul class="baseinfo-box">
+                        <li class="name">第二学历：</li>
+                        <li>本科</li>
+                    </ul>
+
+                    <ul class="baseinfo-box">
+                        <li class="name">公司名：</li>
+                        <li>市北健身中心</li>
+                    </ul>
+                    <ul class="baseinfo-box">
+                        <li class="name">职位：</li>
+                        <li>跆拳道健身教练</li>
+                    </ul>
+                    <ul class="baseinfo-box">
+                        <li class="name">荣誉：</li>
+                        <li>国家一级跆拳道竞赛一等奖</li>
+                    </ul>
+                    <ul class="baseinfo-box">
+                        <li class="name">证书：</li>
+                        <li>跆拳道健身教练资格证</li>
+                    </ul>
+                </div>
+                <div class="baseinfo margin-top">
+                    <h1>联系方式</h1>
+                    <ul class="baseinfo-box">
+                        <li class="name">手机号码：</li>
+                        <li>17096055901</li>
+                    </ul>
+                    <ul class="baseinfo-box">
+                        <li class="name">电子邮箱：</li>
+                        <li>123456789@qq.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="xs9">
+            <div class="table-responsive-y">
+                <div class="top"><span>执教情况</span></div>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>级别</th>
+                        <th>时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>青岛市跆拳道竞赛</td>
+                        <td>一等奖</td>
+                        <td>2016-11-1</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive-y margin-big-top">
+                <div class="top"><span>历史成绩</span></div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>级别</th>
+                            <th>时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>青岛市跆拳道竞赛</td>
+                            <td>一等奖</td>
+                            <td>2016-11-1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive-y margin-big-top">
+                <div class="top"><span>课程情况</span></div>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>人数</th>
+                        <th>时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>跆拳道</td>
+                        <td>20</td>
+                        <td>2018-06-30</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive-y margin-big-top">
+                <div class="top"><span>执教评价</span></div>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>评价人</th>
+                        <th>内容</th>
+                        <th>时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>admin</td>
+                        <td>优秀</td>
+                        <td>2018-06-30</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-layout margin-big-top">
+    <div class="border-top padding-big-top padding-big-bottom">
+        <div class="container">
+            <div class="line-big">
+                <div class="xs8">
+                    <div class="wp-title_content">
+                        <div style="">
+                            <span>主办单位：青岛市市北区体育局&nbsp; 联系地址：青岛市明霞路37号</span>
+                        </div>
+                        <div style="">
+                            <span>电话：010-6XXXXXXX 邮编:100120&nbsp; 传真:010-6XXXXXXX&nbsp; 邮箱:xxxXXXXX@xxx.com</span>
+                        </div>
+                        <div style="">
+                            <span>技术支持：青岛市逸海蓝图信息科技有限公司</span>
+                        </div>
+                        <div class="link">
+                            <span>链接：</span><a href="">青岛市体育局</a><a href="">市南区体育局</a><a href="">李沧区体育局</a><a href="">崂山区体育局</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xs4">
+                    <div class="app">
+                        <img src="images/erweima.jpg" alt=""/>
+                        <span>移动端网站</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center height-big" style="color:#fff;">
+            版权所有 © <a href="http://www.yhlto.com">http://www.yhlto.com</a> All Rights Reserved</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--为了让 IE 浏览器运行最新的渲染模式，建议将此 meta 标签加入到你页面的 head 中-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 为了让浏览器运行高速模式下，建议将此 meta 标签加入到你页面的 head 中-->
+    <meta name="renderer" content="webkit">
+    <!--为了确保适当的绘制和触屏缩放，需要在 之中添加viewport元数据标签-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/pintuer.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="plugins/blueimp/css/blueimp-gallery.min.css"/>
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pintuer.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="plugins/blueimp/js/jquery.blueimp-gallery.min.js"></script>
+    <title>市北区体育局业务管理系统</title>
+    <style>
+        .siteImg{
+            margin-top:10px;
+        }
+        .siteImg img{
+            height:120px;
+            width:100px;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line-big">
+            <div class="xs8">
+                <div class="logo-col">
+                    <img src="images/logo_new.png" alt=""/>
+                    <span>市北区体育局业务管理系统</span>
+                </div>
+            </div>
+            <div class="xs4">
+                <form class="search-col">
+                    <div class="input-group">
+                        <input type="text" class="input border-blue" name="keywords" size="30" placeholder="关键词" />
+                    <span class="addbtn">
+                        <button type="button" class="button bg-blue">
+                            搜索</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="navbar bg-myself bg-inverse">
+            <div class="navbar-body nav-navicon">
+                <ul class="nav nav-inline nav-menu nav-big">
+                    <li><a href="javascript:void(0)" onclick="window.location.href='index.html'">首页</a></li>
+                    <li><a href="">预约信息</a></li>
+                    <li><a href="">场馆资讯</a></li>
+                    <li><a href="">系统资讯</a></li>
+                    <li><a href="">健身知识</a></li>
+                    <li><a href="">政策法规</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="line-big margin-big-top">
+            <div class="xs12">
+                <ul class="bread">
+                    <li>当前位置：</li>
+                    <li><a href="#">场馆资讯</a></li>
+                    <li>市北健身中心</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">
+            <h1>市北健身中心</h1>
+        </div>
+        <div class="line-big margin-big-top min-height">
+            <div class="xs3">
+                <div class="venue">
+                    <div class="imgcol">
+                        <a href="javascript:void(0)">
+                            <img src="images/site/PT_ET06700850ET976.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="xs9">
+                <div class="padding-big">
+                    <div class="cont">电话：<span>18669721080</span></div>
+                    <div class="cont">营业时间：<span>周一至周日09:00-18:00</span></div>
+                    <div class="cont">地址：<span>明霞路37号中联运动公园(台东三百惠,动物园北门,市北区教育局)</span></div>
+                    <div class="siteImg">
+                        <img src="images/timg.jpg" alt=""/>
+                        <img src="images/timg1.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headline col-border-top">
+            <span>预约情况</span>
+        </div>
+        <div class="line">
+            <div class="xs12">
+                <div class="table-responsive-y">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>预约人</th>
+                            <th>设施名称</th>
+                            <th>联系电话</th>
+                            <th>预约时间</th>
+                            <th>教练</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>admin</td>
+                            <td>跆拳道场地</td>
+                            <td>183****689</td>
+                            <td>18:30 - 20:30</td>
+                            <td>田亮</td>
+                            <td>
+                                <button class="button bg-main button-small" type="button">修改</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="headline col-border-top margin-big-top">
+            <span>课程信息</span>
+        </div>
+        <div class="line-big margin-top">
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/tu2.jpg" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">跆拳道</div>
+                            <div class="info">300￥</div>
+                            <div class="info">跆拳道开课了。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/tu2.jpg" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">跆拳道</div>
+                            <div class="info">300￥</div>
+                            <div class="info">跆拳道开课了。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/tu2.jpg" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">跆拳道</div>
+                            <div class="info">300￥</div>
+                            <div class="info">跆拳道开课了。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/tu2.jpg" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">跆拳道</div>
+                            <div class="info">300￥</div>
+                            <div class="info">跆拳道开课了。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/tu2.jpg" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">跆拳道</div>
+                            <div class="info">300￥</div>
+                            <div class="info">跆拳道开课了。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/tu2.jpg" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">跆拳道</div>
+                            <div class="info">300￥</div>
+                            <div class="info">跆拳道开课了。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headline col-border-top margin-big-top">
+            <span>签约教练</span>
+        </div>
+        <div class="line-big margin-top">
+            <div class="xs2">
+                <div class="coach" onclick="window.location.href='coachInfo.html'">
+                    <div class="imgcol">
+                        <img src="images/coach.png" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">国家一级健身指导员</div>
+                            <div class="info">田亮</div>
+                            <div class="info">曾经就职于国内顶尖的健身俱乐部，获得过多项健身荣誉。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/coach.png" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">国家一级健身指导员</div>
+                            <div class="info">田亮</div>
+                            <div class="info">曾经就职于国内顶尖的健身俱乐部，获得过多项健身荣誉。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/coach.png" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">国家一级健身指导员</div>
+                            <div class="info">田亮</div>
+                            <div class="info">曾经就职于国内顶尖的健身俱乐部，获得过多项健身荣誉。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/coach.png" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">国家一级健身指导员</div>
+                            <div class="info">田亮</div>
+                            <div class="info">曾经就职于国内顶尖的健身俱乐部，获得过多项健身荣誉。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/coach.png" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">国家一级健身指导员</div>
+                            <div class="info">田亮</div>
+                            <div class="info">曾经就职于国内顶尖的健身俱乐部，获得过多项健身荣誉。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xs2">
+                <div class="coach">
+                    <div class="imgcol">
+                        <img src="images/coach.png" alt=""/>
+                        <div class="imgtitle">
+                            <div class="info">国家一级健身指导员</div>
+                            <div class="info">田亮</div>
+                            <div class="info">曾经就职于国内顶尖的健身俱乐部，获得过多项健身荣誉。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line-big margin-big-top">
+            <div class="xs12">
+                <div class="col col-border-top" style="height:245px;">
+                    <div class="col-head">
+                        <span>场馆设施</span>
+                    </div>
+                    <div class="col-body">
+                        <div class="scroll">
+                            <ul class="featureUL" style="width: 2660px;">
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_EF24322291EF595.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">中联户外足球场</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_ET16602840ET620.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">中联壁球馆</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_ET16401870ET277.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">中联乒乓球馆</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_ET16300870ET655.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">中联羽毛球馆</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_ET06902810ET132.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">中联游泳馆</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_ET06700850ET976.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">市北健身中心</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_EF17322121EE716.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">中联运动公园</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_EF37323181EE699.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">杰克台球俱乐部</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_ET28221370EX720.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">青岛市漫城台球俱乐部</div>
+                                    </div>
+                                </li>
+                                <li class="featureBox">
+                                    <div class="box">
+                                        <div class="imgcol">
+                                            <a href="">
+                                                <img src="images/site/PT_EF47325121EE845.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="imgtitle" onclick="window.location.href=''">青岛市博克名流台球俱乐部</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-layout margin-big-top">
+        <div class="border-top padding-big-top padding-big-bottom">
+            <div class="container">
+                <div class="line-big">
+                    <div class="xs8">
+                        <div class="wp-title_content">
+                            <div style="">
+                                <span>主办单位：青岛市市北区体育局&nbsp; 联系地址：青岛市明霞路37号</span>
+                            </div>
+                            <div style="">
+                                <span>电话：010-6XXXXXXX 邮编:100120&nbsp; 传真:010-6XXXXXXX&nbsp; 邮箱:xxxXXXXX@xxx.com</span>
+                            </div>
+                            <div style="">
+                                <span>技术支持：青岛市逸海蓝图信息科技有限公司</span>
+                            </div>
+                            <div class="link">
+                                <span>链接：</span><a href="">青岛市体育局</a><a href="">市南区体育局</a><a href="">李沧区体育局</a><a href="">崂山区体育局</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xs4">
+                        <div class="app">
+                            <img src="images/erweima.jpg" alt=""/>
+                            <span>移动端网站</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center height-big" style="color:#fff;">
+                版权所有 © <a href="http://www.yhlto.com">http://www.yhlto.com</a> All Rights Reserved</div>
+        </div>
+    </div>
+    <div class="lightBoxGallery">
+        <div >用户未添加图片/视频</div>
+    </div>
+    <script>
+        $(function(){
+            $(".scroll").myScroll({
+                speed:40, //数值越大，速度越慢
+                rowHeight:265
+            });
+            $('.lightBoxGallery').append("<a onclick=\"showVideo($(this))\" title='图片"+(index+1)+"' class='data-"+type+"' data-gallery='' style='float:center;' href=\""+url+"\">"
+            +str+"</a>");
+        })
+    </script>
+</body>
+</html>
+
